@@ -14,7 +14,6 @@ import {
 const Skills = () => (
     <SkillsWrapper>
         <SkillText />
-
         <div className="skill-list">
             {Skill_data.map((image, index) => (
                 <div key={index}>
@@ -27,7 +26,6 @@ const Skills = () => (
                 </div>
             ))}
         </div>
-
         <div className="skill-list">
             {Frontend_skill.map((image, index) => (
                 <div key={index}>
@@ -76,7 +74,6 @@ const Skills = () => (
                 </div>
             ))}
         </div>
-
         <div className="skill-bg">
             <div className="skill-bg--video">
                 <video
