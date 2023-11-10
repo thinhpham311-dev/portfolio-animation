@@ -17,58 +17,63 @@ const Skills = () => (
 
         <div className="skill-list">
             {Skill_data.map((image, index) => (
-                <SkillDataProvider
-                    key={index}
-                    src={image.Image}
-                    width={image.width}
-                    height={image.height}
-                    index={index}
-                />
+                <div key={index}>
+                    <SkillDataProvider
+                        src={image.Image}
+                        width={image.width}
+                        height={image.height}
+                        index={index}
+                    />
+                </div>
             ))}
         </div>
 
         <div className="skill-list">
             {Frontend_skill.map((image, index) => (
-                <SkillDataProvider
-                    key={index}
-                    src={image.Image}
-                    width={image.width}
-                    height={image.height}
-                    index={index}
-                />
+                <div key={index}>
+                    <SkillDataProvider
+                        src={image.Image}
+                        width={image.width}
+                        height={image.height}
+                        index={index}
+                    />
+                </div>
             ))}
         </div>
         <div className="skill-list">
             {Backend_skill.map((image, index) => (
-                <SkillDataProvider
-                    key={index}
-                    src={image.Image}
-                    width={image.width}
-                    height={image.height}
-                    index={index}
-                />
+                <div key={index}>
+                    <SkillDataProvider
+                        src={image.Image}
+                        width={image.width}
+                        height={image.height}
+                        index={index}
+                    />
+                </div>
             ))}
         </div>
         <div className="skill-list">
             {Full_stack.map((image, index) => (
-                <SkillDataProvider
-                    key={index}
-                    src={image.Image}
-                    width={image.width}
-                    height={image.height}
-                    index={index}
-                />
+                <div key={index}>
+                    <SkillDataProvider
+                        src={image.Image}
+                        width={image.width}
+                        height={image.height}
+                        index={index}
+                    />
+                </div>
             ))}
         </div>
         <div className="skill-list">
             {Other_skill.map((image, index) => (
-                <SkillDataProvider
-                    key={index}
-                    src={image.Image}
-                    width={image.width}
-                    height={image.height}
-                    index={index}
-                />
+                <div key={index}>
+                    <SkillDataProvider
+                        src={image.Image}
+                        width={image.width}
+                        height={image.height}
+                        index={index}
+                    />
+                </div>
             ))}
         </div>
 
