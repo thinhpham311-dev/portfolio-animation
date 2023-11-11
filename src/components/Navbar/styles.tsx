@@ -5,7 +5,7 @@ interface props {
 }
 
 const NavbarWrapper = styled.div<props>(({ open }) => [
-    tw`fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-slate-300/30 bg-[#03001417] backdrop-blur-md z-50 px-10 h-[65px] w-full`,
+    tw`fixed top-0 shadow-lg shadow-[#2A0E61]/50 xl:bg-slate-300/30 bg-slate-300/70 bg-[#03001417] xl:backdrop-blur-md z-50 px-10 h-[65px] w-full`,
     css`
         .navbar{
             ${tw`w-full h-full flex flex-wrap flex-row items-center justify-between m-auto xl:px-[10px]`}
@@ -16,7 +16,7 @@ const NavbarWrapper = styled.div<props>(({ open }) => [
                 }
             }
             &-button{
-                ${tw`h-[50px] w-[50px] rounded-full border-2 border-white xl:hidden focus:bg-transparent flex items-center justify-center`}
+                ${tw`h-[50px] w-[50px] rounded-full border-2 border-white bg-[#7042f88b] xl:hidden focus:bg-[#7042f88b] focus:rounded-full flex items-center justify-center`}
                 svg{
                     ${tw` text-white`}
                 }
@@ -25,9 +25,9 @@ const NavbarWrapper = styled.div<props>(({ open }) => [
                 ${open ? tw`flex` : tw`hidden`}
                 ${tw`xl:w-[500px] w-full h-full xl:flex flex-row items-center justify-between xl:mr-20 mr-0`}
                 &--list{
-                    ${tw`flex items-center justify-between w-full h-auto border border-[#7042f861] xl:bg-[#0300145e] bg-[#7042f861] xl:mr-[15px] mr-0 px-[20px] py-[10px] rounded-full text-gray-200`}
+                    ${tw`flex items-center justify-between w-full h-auto border border-[#7042f861] xl:bg-[#0300145e] bg-[#7042f88b] xl:mr-[15px] mr-0 px-[20px] py-[10px] rounded-full text-gray-200`}
                     a.menu-item{
-                        ${tw`cursor-pointer xl:inline-block block`}
+                        ${tw`cursor-pointer xl:inline-block block font-bold`}
                     }
                 }
             }
