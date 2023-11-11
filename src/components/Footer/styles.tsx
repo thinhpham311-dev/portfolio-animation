@@ -13,7 +13,7 @@ const FooterWrapper = styled.footer(() => [
             }
         }
         div.footer-title{
-            ${tw`font-bold text-[16px]`}
+            ${tw`font-bold text-[20px] mb-[20px]`}
         }
         p.footer-item{
             ${tw` flex flex-row items-center my-[15px] cursor-pointer`}

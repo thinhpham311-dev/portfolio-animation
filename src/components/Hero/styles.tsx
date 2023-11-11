@@ -23,7 +23,7 @@ const HeroWrapper = styled.div(() => [
                         ${tw`text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500`}
                     }
                     br{
-                        ${tw`xl:block hidden`}
+                        ${tw`xl:block lg:block md:hidden hidden`}
                     }
                 }
                 p.hero-description{
@@ -34,7 +34,7 @@ const HeroWrapper = styled.div(() => [
                 }
             }
             &--image{
-                ${tw`w-full h-full xl:flex hidden justify-center items-center`}
+                ${tw`w-full h-full xl:flex lg:flex md:hidden hidden justify-center items-center`}
             }
         }
     `
