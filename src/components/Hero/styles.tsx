@@ -8,7 +8,7 @@ const HeroWrapper = styled.div(() => [
             ${tw`rotate-180 absolute top-[-340px] left-0 z-[1] w-full h-full object-cover`}
         }
         div.hero-inner{
-            ${tw`flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]`}
+            ${tw`flex flex-row items-center justify-center xl:px-20 px-10 xl:mt-40 mt-60 w-full z-[20]`}
             &--text{
                 ${tw`w-full h-full flex flex-col gap-5 justify-center m-auto text-start`}
                 div.Welcome-box{
@@ -18,9 +18,12 @@ const HeroWrapper = styled.div(() => [
                     }
                 }
                 div.hero-title{
-                    ${tw`flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto`}
+                    ${tw`flex flex-col gap-6 xl:mt-6 xl:text-6xl text-5xl font-bold text-white max-w-[600px] w-auto h-auto`}
                     span.mask{
                         ${tw`text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500`}
+                    }
+                    br{
+                        ${tw`xl:block hidden`}
                     }
                 }
                 p.hero-description{
@@ -31,7 +34,7 @@ const HeroWrapper = styled.div(() => [
                 }
             }
             &--image{
-                ${tw`w-full h-full flex justify-center items-center`}
+                ${tw`w-full h-full xl:flex hidden justify-center items-center`}
             }
         }
     `

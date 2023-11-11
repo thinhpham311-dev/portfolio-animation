@@ -12,7 +12,7 @@ import {
 } from "@/constants";
 
 const Skills = () => (
-    <SkillsWrapper>
+    <SkillsWrapper id="skills">
         <SkillText />
         <div className="skill-list">
             {Skill_data.map((image, index) => (

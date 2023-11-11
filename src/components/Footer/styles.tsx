@@ -6,7 +6,7 @@ const FooterWrapper = styled.footer(() => [
         div.footer-inner {
             ${tw`w-full flex flex-col items-center justify-center m-auto`}
             &--grid{
-                ${tw`w-full h-full flex flex-row items-center justify-around flex-wrap`}
+                ${tw`w-full h-full flex gap-10 flex-row items-center justify-around flex-wrap`}
                 &-col{
                     ${tw` min-w-[200px] h-auto flex flex-col items-center justify-start`}
                 }
@@ -20,9 +20,12 @@ const FooterWrapper = styled.footer(() => [
             &--text{
                 ${tw`text-[15px] ml-[6px]`}
             }
+            svg{
+                ${tw`mr-[10px]`}
+            }
         }
         div.footer-license{
-            ${tw`mb-[20px] text-[15px] text-center`}
+            ${tw`my-[40px] text-[15px] text-center`}
         }
     `
 ])

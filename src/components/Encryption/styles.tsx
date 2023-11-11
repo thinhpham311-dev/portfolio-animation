@@ -1,19 +1,19 @@
 import tw, { styled, css } from 'twin.macro'
 
 const EncryptionWrapper = styled.section(() => [
-    tw`flex flex-row relative items-center justify-center min-h-screen w-full h-full`,
+    tw`flex flex-row relative items-center justify-center xl:min-h-screen lg:min-h-screen md:min-h-[80vh] min-h-[100vh] w-full h-full`,
     css`
         div.encryption-title{
             ${tw` absolute w-auto h-auto top-0 z-[5]`}
             &--text{
-                ${tw`text-[40px] font-medium text-center text-gray-200`}
+                ${tw`xl:text-[40px] text-[26px] font-medium text-center text-gray-200`}
                 span.mask{
                     ${tw`text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500`}
                 }
             }
         }
         div.encryption-context {
-            ${tw` flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto`}
+            ${tw` flex flex-col items-center justify-center  absolute z-[20] w-auto h-auto`}
             &--image{
                 ${tw`flex flex-col items-center  cursor-pointer w-auto h-auto`}
                 img.lock-top{
@@ -37,9 +37,9 @@ const EncryptionWrapper = styled.section(() => [
             }
         }
         div.encryption-bg{
-            ${tw`w-full flex items-start justify-center absolute`}
+            ${tw`xl:scale-100 lg:scale-[1.5] md:scale-[1.5] scale-[3.5]  flex items-start justify-center absolute`}
             video{
-                ${tw`w-full h-auto`}
+                ${tw`w-full h-auto aspect-video`}
             }
         }
     `

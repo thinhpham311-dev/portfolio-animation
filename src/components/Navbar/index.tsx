@@ -1,11 +1,19 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import { NavbarWrapper } from './styles'
 import { Socials } from "@/constants";
+import { AiOutlineMenu } from "react-icons/ai"
 
-const Navbar = () => (
-    <NavbarWrapper>
+const Navbar = () => {
+
+    const [open, setOpen] = useState(false)
+
+    const handleToggle = () => {
+        setOpen(!open)
+    }
+
+    return (<NavbarWrapper open={open}>
         <div className="navbar">
             <a href="#about-me" className="navbar-logo">
                 <Image
@@ -19,6 +27,7 @@ const Navbar = () => (
                     WebChain Dev
                 </span>
             </a>
+            <button onClick={handleToggle} className="navbar-button" type="button"><AiOutlineMenu /></button>
             <div className="navbar-menu">
                 <div className="navbar-menu--list ">
                     <a href="#about-me" className="menu-item">
@@ -45,6 +54,7 @@ const Navbar = () => (
             </div>
         </div>
     </NavbarWrapper>
-)
+    )
+}
 
 export default Navbar

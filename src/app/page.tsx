@@ -4,10 +4,10 @@ import { Hero, Skills, Encryption, Projects } from '@/components'
 import tw, { styled, css } from 'twin.macro'
 
 const MainStyled = styled.main(() => [
-  tw`h-full w-full`,
+  tw`h-full w-full overflow-x-hidden`,
   css`
     div.wrapper-box{
-      ${tw`flex flex-col gap-20`}
+      ${tw`flex flex-col xl:gap-20 gap-0`}
     }
   `
 ])

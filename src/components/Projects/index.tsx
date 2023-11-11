@@ -5,7 +5,7 @@ import ProjectCard from "./card";
 
 const Projects = () => {
   return (
-    <ProjectsWrapper>
+    <ProjectsWrapper id="projects">
       <h1 className="projects-title ">
         My Projects
       </h1>
