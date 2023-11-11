@@ -1,7 +1,7 @@
 import tw, { styled, css } from 'twin.macro'
 
 const SkillsWrapper = styled.section(() => [
-    tw`flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden xl:pb-80 pb-60 py-20`,
+    tw`flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden xl:pb-80 pb-80 py-20`,
     css`
         div.skill-title{
             ${tw`w-full h-auto flex flex-col items-center justify-center`}
@@ -25,7 +25,7 @@ const SkillsWrapper = styled.section(() => [
             }
         }
         div.skill-bg{
-            ${tw` w-full xl:h-full lg:h-full md:h-full h-1/4 bottom-0 absolute`}
+            ${tw` w-full xl:h-full lg:h-full md:h-full h-1/3 bottom-0 absolute`}
             &--video{
                 ${tw`w-full h-full z-[-10] xl:opacity-30 lg:opacity-30 md:opacity-30 opacity-100 absolute flex items-center justify-center bg-cover`}
                 video{
