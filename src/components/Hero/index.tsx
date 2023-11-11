@@ -5,7 +5,7 @@ import HeroContent from './content'
 
 
 const Hero = () => (
-    <HeroWrapper>
+    <HeroWrapper id="about-me">
         <video autoPlay muted loop>
             <source src="/blackhole.webm" type="video/webm" />
         </video>

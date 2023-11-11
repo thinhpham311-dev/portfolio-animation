@@ -5,12 +5,12 @@ const HeroWrapper = styled.div(() => [
     tw`relative flex flex-col h-full w-full`,
     css`
         video{
-            ${tw`rotate-180 absolute top-[-340px] left-0 z-[1] w-full h-full object-cover`}
+            ${tw`rotate-180 absolute xl:top-[-340px] lg:top-[-340px] md:top-[-340px] top-[-450px]  left-0 z-[1] w-full h-full object-cover`}
         }
         div.hero-inner{
-            ${tw`flex flex-row items-center justify-center xl:px-20 px-10 xl:mt-40 xl:mb-0 md:my-60 w-full z-[20]`}
+            ${tw`flex flex-row items-center justify-center xl:px-20 px-10 xl:mt-40 xl:mb-0 lg:mt-40 lg:mb-0 md:my-60 my-60 w-full z-[20]`}
             &--text{
-                ${tw`w-full h-full flex flex-col xl:gap-5 gap-8 justify-center m-auto text-start`}
+                ${tw`w-full h-full flex flex-col xl:gap-5 gap-7 justify-center m-auto text-start`}
                 div.Welcome-box{
                     ${tw`py-[15px] px-[10px] border border-[#7042f88b] opacity-[0.9]`}
                     svg{

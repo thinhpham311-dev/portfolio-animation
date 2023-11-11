@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Image from "next/image";
 import { NavbarWrapper } from './styles'
 import { Socials } from "@/constants";
-import { AiOutlineMenu } from "react-icons/ai"
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 
 const Navbar = () => {
 
@@ -27,7 +27,7 @@ const Navbar = () => {
                     WebChain Dev
                 </span>
             </a>
-            <button onClick={handleToggle} className="navbar-button" type="button"><AiOutlineMenu /></button>
+            <button onClick={handleToggle} className="navbar-button" type="button">{!open ? <AiOutlineMenu /> : <AiOutlineClose />}</button>
             <div className="navbar-menu">
                 <div className="navbar-menu--list ">
                     <a href="#about-me" className="menu-item">
@@ -53,7 +53,7 @@ const Navbar = () => {
                 ))}
             </div>
         </div>
-    </NavbarWrapper>
+    </NavbarWrapper >
     )
 }
 

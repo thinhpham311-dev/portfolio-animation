@@ -21,7 +21,7 @@ const SkillsWrapper = styled.section(() => [
         div.skill-list {
             ${tw` flex flex-row justify-around flex-wrap mt-4 xl:gap-5 gap-3 items-center xl:px-0 px-10`}
             img{
-                ${tw`xl:h-[80px] xl:w-[80px] lg:h-[60px] lg:w-[60px] md:h-[40px] md:w-[40px] h-[60px] w-[60px] `}
+                ${tw`xl:h-[80px] xl:w-[80px] lg:h-[60px] lg:w-[60px] md:h-[40px] md:w-[40px] h-[50px] w-[50px] `}
             }
         }
         div.skill-bg{

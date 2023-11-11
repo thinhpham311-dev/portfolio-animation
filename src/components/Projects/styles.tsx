@@ -19,7 +19,7 @@ const ProjectsWrapper = styled.section(() => [
                         ${tw` xl:text-2xl text-xl font-semibold text-white`}
                     }
                     &-description{
-                        ${tw` mt-2 text-gray-300`}
+                        ${tw` xl:text-lg text-sm mt-2 text-gray-300`}
                     }
                 }
             }
