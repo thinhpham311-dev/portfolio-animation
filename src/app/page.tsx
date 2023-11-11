@@ -7,7 +7,7 @@ const MainStyled = styled.main(() => [
   tw`h-full w-full overflow-x-hidden`,
   css`
     div.wrapper-box{
-      ${tw`flex flex-col xl:gap-20 gap-0`}
+      ${tw`flex flex-col gap-20`}
     }
   `
 ])

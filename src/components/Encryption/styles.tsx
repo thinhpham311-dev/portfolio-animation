@@ -1,7 +1,7 @@
 import tw, { styled, css } from 'twin.macro'
 
 const EncryptionWrapper = styled.section(() => [
-    tw`flex flex-row relative items-center justify-center xl:min-h-screen lg:min-h-screen md:min-h-[80vh] min-h-[100vh] w-full h-full`,
+    tw`flex flex-row relative items-center justify-center xl:min-h-screen lg:min-h-screen md:min-h-[80vh] min-h-[70vh] w-full h-full`,
     css`
         div.encryption-title{
             ${tw` absolute w-auto h-auto top-0 z-[5]`}
@@ -33,11 +33,11 @@ const EncryptionWrapper = styled.section(() => [
         div.encryption-subtitle{
             ${tw` absolute z-[20] bottom-[10px] px-[5px]`}
             &--text{
-                ${tw`text-[20px] font-medium text-center text-gray-300`}
+                ${tw`xl:text-[20px] text-[18px] font-medium text-center text-gray-300`}
             }
         }
         div.encryption-bg{
-            ${tw`xl:scale-100 lg:scale-[1.5] md:scale-[1.5] scale-[3.5]  flex items-start justify-center absolute`}
+            ${tw` xl:scale-[1.25] lg:scale-[1.5] md:scale-[1.5] scale-[3.5]  flex items-start justify-center absolute`}
             video{
                 ${tw`w-full h-auto aspect-video`}
             }

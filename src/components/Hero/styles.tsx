@@ -8,9 +8,9 @@ const HeroWrapper = styled.div(() => [
             ${tw`rotate-180 absolute top-[-340px] left-0 z-[1] w-full h-full object-cover`}
         }
         div.hero-inner{
-            ${tw`flex flex-row items-center justify-center xl:px-20 px-10 xl:mt-40 mt-60 w-full z-[20]`}
+            ${tw`flex flex-row items-center justify-center xl:px-20 px-10 xl:mt-40 xl:mb-0 md:my-60 w-full z-[20]`}
             &--text{
-                ${tw`w-full h-full flex flex-col gap-5 justify-center m-auto text-start`}
+                ${tw`w-full h-full flex flex-col xl:gap-5 gap-8 justify-center m-auto text-start`}
                 div.Welcome-box{
                     ${tw`py-[15px] px-[10px] border border-[#7042f88b] opacity-[0.9]`}
                     svg{
@@ -27,7 +27,7 @@ const HeroWrapper = styled.div(() => [
                     }
                 }
                 p.hero-description{
-                    ${tw`text-lg text-gray-400 my-5 max-w-[600px]`}
+                    ${tw`text-lg text-gray-400 xl:my-5 max-w-[600px]`}
                 }
                 a.button-primary{
                     ${tw`py-2 text-center text-white cursor-pointer rounded-lg max-w-[200px]`}
